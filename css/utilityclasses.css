@@ -22,7 +22,7 @@
   }
 
   .width100{
-    width: 100vw;
+    width: 100%;
   }
 
   .larger{
@@ -31,11 +31,18 @@
 
   .social-distancing{
     margin: 5px 20px 5px 20px;
-    
+  }
+
+  .wrap{
+    flex-wrap: wrap;
   }
 
   .green-text{
     color: rgb(21, 204, 21);
+  }
+
+  .blue-text{
+    color: rgb(21, 85, 204);
   }
 
   .black-text{
@@ -45,6 +52,14 @@
   .margintopbottom{
     margin-top: 10%;
     margin-bottom: 10%;
+  }
+
+  .side-margin{
+    margin: 0% 10% 0% 10%;
+  }
+
+  .margin{
+    margin : 10% ;
   }
 
   .bolder{
