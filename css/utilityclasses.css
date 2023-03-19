@@ -1,0 +1,52 @@
+.flex-row-center {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .flex-column-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .text-center{
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .backgroundbaigan{
+    background-color:rgb(35,0,122);
+  }
+
+  .width100{
+    width: 100vw;
+  }
+
+  .larger{
+    font-size: 300%;
+  }
+
+  .social-distancing{
+    margin: 5px 20px 5px 20px;
+    
+  }
+
+  .green-text{
+    color: rgb(21, 204, 21);
+  }
+
+  .black-text{
+    color: black;
+  }
+
+  .margintopbottom{
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+
+  .bolder{
+    font-weight: bolder;
+  }
