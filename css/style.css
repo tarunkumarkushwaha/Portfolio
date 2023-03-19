@@ -6,9 +6,51 @@
   font-family: 'Roboto', sans-serif;
 }
 
+.dropdown{
+  display: none;
+}
+
+.dropbtn {
+  background-color: #39db34;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #29b941;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+
 .top {
   background-color: black;
   color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
 .top a {
@@ -18,7 +60,7 @@
   color: white;
 }
 
-.navbar {
+.navbar1 {
   height: 10vh;
 }
 
@@ -64,19 +106,19 @@
   background-color: rgb(96, 184, 96);
 }
 
-.svg1{
+.svg1 {
   height: 50vh;
   width: 50hw;
   margin: 25px;
 }
 
-.containerleft1 {
+/* .containerleft1 {
   background-color: rgb(255, 255, 255);
 }
 
 .containerright1 {
   background-color: rgb(255, 255, 255);
-}
+} */
 
 .cardcontainer {
   flex-wrap: wrap;
@@ -143,7 +185,24 @@
   }
 }
 
+
+
 @media only screen and (max-width: 600px) {
+  .top {
+    display: none;
+  }
+
+  .svg1 {
+    height: 25vh;
+    width: 50hw;
+    margin: 25px;
+  }
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
   .page {
     display: flex;
     flex-direction: column;
@@ -153,5 +212,9 @@
 
   .text {
     font-size: 11px
+  }
+
+  .navbar1 {
+    flex-wrap: wrap;
   }
 }
