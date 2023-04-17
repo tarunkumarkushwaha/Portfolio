@@ -1,67 +1,27 @@
 .flex-row-center {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .flex-column-center {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
 
-  .text-center{
-    text-align: center;
-    text-decoration: none;
-  }
+.flex-column-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
-  .backgroundbaigan{
-    background-color:rgb(35,0,122);
-  }
+.text-center {
+  text-align: center;
+  text-decoration: none;
+}
 
-  .width100{
-    width: 100%;
-  }
-
-  .larger{
-    font-size: 300%;
-  }
-
-  .social-distancing{
-    margin: 5px 20px 5px 20px;
-  }
-
-  .wrap{
-    flex-wrap: wrap;
-  }
-
-  .green-text{
-    color: rgb(21, 204, 21);
-  }
-
-  .blue-text{
-    color: rgb(21, 85, 204);
-  }
-
-  .black-text{
-    color: black;
-  }
-
-  .margintopbottom{
-    margin-top: 10%;
-    margin-bottom: 10%;
-  }
-
-  .side-margin{
-    margin: 0% 10% 0% 10%;
-  }
-
-  .margin{
-    margin : 10% ;
-  }
-
-  .bolder{
-    font-weight: bolder;
-  }
+a{
+  margin: 50px;
+  padding: 15px;
+  border-radius: 25px;
+  background-color: rgba(0, 0, 0, 0.274);
+  color: aliceblue;
+  text-decoration: none;
+}
