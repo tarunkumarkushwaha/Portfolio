@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>Trade G</title>
+  <title>Tarun portfolio</title>
   <link href="css\style.css" rel="stylesheet" type="text/css" />
   <link href="css\utilityclasses.css" rel="stylesheet" type="text/css" />
 </head>
@@ -15,18 +15,104 @@
   <div class="dropdown">
     <button onclick="myFunction()" class="dropbtn">btn</button>
     <div id="myDropdown" class="dropdown-content">
-      <a href="#">Home</a>
-      <a href="#">Projects</a>
-      <a href="#">Resume</a>
+      <a href="index.html">Home</a>
+      <div class="button" onclick="showabout()">About</div>
+      <div class="button" onclick="showproject()">Projects</div>
+      <!-- <a href="resume.html">Resume</a> -->
       <a href="#">Contact me</a>
     </div>
-  </div> 
-  <div class="flex-row-center">
-    <a href="#">Home</a>
-    <a href="#">Projects</a>
-    <a href="#">Resume</a>
+  </div>
+  <div class="flex-row-center navbar">
+    <a href="index.html">Home</a>
+    <div class="button" onclick="showabout()">About</div>
+    <div class="button" onclick="showproject()">Projects</div>
+    <!-- <a href="resume.html">Resume</a> -->
     <a href="#">Contact me</a>
-  </div> 
+  </div>
+  <!-- <div class="intro">
+    <h3>Tarun kushwaha</h3>
+    <p>Full stack developer</p>
+  </div> -->
+  <div class="align-center">
+    <div class="intro">
+      <h1 class="margin10">Hi I'm <strong><span>Tarun kushwaha</span></strong></h1>
+      <p class="lead margin10">Front-End Developer</p>
+    </div>
+
+  </div>
+  <div class="slideshow-container">
+    <h2 class="sub-heading">My projects</h2>
+    <div class="mySlides fade">
+      <div class="projectcardcontainer">
+        <div class="projectcard">
+          <img class="cardimg" src="Img\Utilitybox.png" alt="Utilitybox">
+          <h3 class="align-center margin10">Utility Box</h3>
+          <p class="align-center margin10">utility box is a multi-purpose web app. It has many useful features like
+            notepad, calculator, and todos.</p>
+        </div>
+        <div class="projectcard">
+          <img class="cardimg" src="Img\Quiztime.png" alt="QuizTime">
+          <h3 class="align-center margin10">QuizTime</h3>
+          <p class="align-center margin10">quiz time is a web app to test your JavaScript knowledge, there are multiple
+            inbound
+            features including saving past results, improvement calculator, etc.</p>
+        </div>
+        <div class="projectcard">
+          <img class="cardimg" src="Img\Streamflowz.png" alt="Streamflowz">
+          <h3 class="align-center margin10">Streamflowz</h3>
+          <p class="align-center margin10">It is a media streaming site which a well-designed UI.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="projectcardcontainer">
+        <div class="projectcard">
+          <img class="cardimg" src="Img\Netdictionary.png" alt="Net dictionary">
+          <h3 class="align-center margin10">Net dictionary</h3>
+          <p class="align-center margin10">It is a Dictionary app that uses free Dictionary api</p>
+        </div>
+        <div class="projectcard">
+          <img class="cardimg" src="Img\Clockbox.png" alt="Clockbox">
+          <h3 class="align-center margin10">Clockbox</h3>
+          <p class="align-center margin10">clock box is a alarm clock app</p>
+        </div>
+        <div class="projectcard">
+          <img class="cardimg" src="Img\Funphoto.png" alt="Funphoto">
+          <h3 class="align-center margin10">Funphoto</h3>
+          <p class="align-center margin10">Funphoto is a free Unsplash image site. It has a search option to search in
+            various categories.</p>
+        </div>
+      </div>
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+
+  </div>
+
+  <div class="about">
+    <h2 class="align-center sub-heading">About me</h2>
+    <p class="align-center margin10">I learned web development on my own, from the best online resources. I've been
+      working on
+      web development projects continuously for the past six months, and during that time, I've
+      created ten projects on my own. This has greatly increased my practical knowledge with
+      HTML, CSS, JavaScript, Tailwind, React, MongoDB, expressjs, and Node.JS. I'm now seeking
+      for an opportunity to work with other talented people to further expertise my skills.
+    </p>
+    <div class="skills">
+      <h2>Core Competencies</h2>
+      <p>HTML</p>
+      <p>CSS</p>
+      <p>JavaScript</p>
+      <p>Github</p>
+      <p>Reactjs</p>
+      <p>Nextjs</p>
+      <p>Bootstrap</p>
+      <p>tailwind</p>
+    </div>
+    <button class="flex-row-center button align-center">Download CV</button>
+  </div>
   <div class="flex-row-center bolder">
     &copy; 2023 Tarun
   </div>
