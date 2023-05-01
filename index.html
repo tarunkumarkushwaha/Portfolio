@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>Tarun portfolio</title>
+  <link rel="shortcut icon" href="Img\favicon.ico" type="image/x-icon">
   <link href="css\style.css" rel="stylesheet" type="text/css" />
   <link href="css\utilityclasses.css" rel="stylesheet" type="text/css" />
 </head>
@@ -12,108 +13,151 @@
 </head>
 
 <body>
-  <div class="dropdown">
-    <button onclick="myFunction()" class="dropbtn">btn</button>
-    <div id="myDropdown" class="dropdown-content">
-      <a href="index.html">Home</a>
-      <div class="button" onclick="showabout()">About</div>
-      <div class="button" onclick="showproject()">Projects</div>
-      <!-- <a href="resume.html">Resume</a> -->
-      <a href="#">Contact me</a>
+  <div class="article-nav-container">
+    <div class="article-nav">
+      <input type="checkbox" class="nav-toggle" id="nav-toggle">
+      <label for="nav-toggle" class="menu-btn">
+        <img src="Img\menu.png" alt="menu">.
+      </label>
+      <div class="menu-items">
+        <div class="button aboutbtn" onclick="location.href='index.html';">Home</div>
+        <div class="button aboutbtn" onclick="showabout()">About</div>
+        <div class="button projectsbtn" onclick="showproject()">Projects</div>
+        <div class='button contactbtn' onclick="showcontact()">Contact me</div>
+        <button type="button" onclick="showresume()" class="button">Resume</button>
+      </div>
     </div>
   </div>
-  <div class="flex-row-center navbar">
-    <a href="index.html">Home</a>
-    <div class="button" onclick="showabout()">About</div>
-    <div class="button" onclick="showproject()">Projects</div>
-    <!-- <a href="resume.html">Resume</a> -->
-    <a href="#">Contact me</a>
-  </div>
-  <!-- <div class="intro">
-    <h3>Tarun kushwaha</h3>
-    <p>Full stack developer</p>
-  </div> -->
-  <div class="align-center">
+
+  <div class="introcontainer">
     <div class="intro">
-      <h1 class="margin10">Hi I'm <strong><span>Tarun kushwaha</span></strong></h1>
-      <p class="lead margin10">Front-End Developer</p>
+      <h1 class="cursivetext margin10">Hi I'm <strong><span class="cursivetext">Tarun kushwaha</span></strong></h1>
+      <p class="cursivetext margin10">Front-End Developer</p>
     </div>
-
-  </div>
-  <div class="slideshow-container">
-    <h2 class="sub-heading">My projects</h2>
-    <div class="mySlides fade">
-      <div class="projectcardcontainer">
-        <div class="projectcard">
-          <img class="cardimg" src="Img\Utilitybox.png" alt="Utilitybox">
-          <h3 class="align-center margin10">Utility Box</h3>
-          <p class="align-center margin10">utility box is a multi-purpose web app. It has many useful features like
-            notepad, calculator, and todos.</p>
-        </div>
-        <div class="projectcard">
-          <img class="cardimg" src="Img\Quiztime.png" alt="QuizTime">
-          <h3 class="align-center margin10">QuizTime</h3>
-          <p class="align-center margin10">quiz time is a web app to test your JavaScript knowledge, there are multiple
-            inbound
-            features including saving past results, improvement calculator, etc.</p>
-        </div>
-        <div class="projectcard">
-          <img class="cardimg" src="Img\Streamflowz.png" alt="Streamflowz">
-          <h3 class="align-center margin10">Streamflowz</h3>
-          <p class="align-center margin10">It is a media streaming site which a well-designed UI.</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="mySlides fade">
-      <div class="projectcardcontainer">
-        <div class="projectcard">
-          <img class="cardimg" src="Img\Netdictionary.png" alt="Net dictionary">
-          <h3 class="align-center margin10">Net dictionary</h3>
-          <p class="align-center margin10">It is a Dictionary app that uses free Dictionary api</p>
-        </div>
-        <div class="projectcard">
-          <img class="cardimg" src="Img\Clockbox.png" alt="Clockbox">
-          <h3 class="align-center margin10">Clockbox</h3>
-          <p class="align-center margin10">clock box is a alarm clock app</p>
-        </div>
-        <div class="projectcard">
-          <img class="cardimg" src="Img\Funphoto.png" alt="Funphoto">
-          <h3 class="align-center margin10">Funphoto</h3>
-          <p class="align-center margin10">Funphoto is a free Unsplash image site. It has a search option to search in
-            various categories.</p>
-        </div>
-      </div>
-    </div>
-
-    <a class="prev" onclick="plusSlides(-1)">❮</a>
-    <a class="next" onclick="plusSlides(1)">❯</a>
 
   </div>
 
   <div class="about">
     <h2 class="align-center sub-heading">About me</h2>
-    <p class="align-center margin10">I learned web development on my own, from the best online resources. I've been
+    <p class="align-center aboutme">I learned web development on my own, from the best online resources. I've been
       working on
       web development projects continuously for the past six months, and during that time, I've
       created ten projects on my own. This has greatly increased my practical knowledge with
       HTML, CSS, JavaScript, Tailwind, React, MongoDB, expressjs, and Node.JS. I'm now seeking
       for an opportunity to work with other talented people to further expertise my skills.
     </p>
+
+    <div class="align-center skillnameshead"><h2>Core Competencies</h2></div>
     <div class="skills">
-      <h2>Core Competencies</h2>
-      <p>HTML</p>
-      <p>CSS</p>
-      <p>JavaScript</p>
-      <p>Github</p>
-      <p>Reactjs</p>
-      <p>Nextjs</p>
-      <p>Bootstrap</p>
-      <p>tailwind</p>
-    </div>
-    <button class="flex-row-center button align-center">Download CV</button>
+      <div class="skill-card">
+        <p class="align-center">HTML</p>
+        <!-- <div id="Progress_Status">
+          <div id="myprogressBar"></div>
+        </div> -->
+      </div>
+      <div class="skill-card">
+        <p class="align-center">CSS</p>
+        <!-- <div id="Progress_Status">
+          <div id="myprogressBar"></div>
+        </div> -->
+      </div>
+      <div class="skill-card">
+        <p class="align-center">JavaScript</p>
+        <!-- <div id="Progress_Status">
+          <div id="myprogressBar"></div>
+        </div> -->
+      </div>
+      <div class="skill-card">
+        <p class="align-center">Github</p>
+        <!-- <div id="Progress_Status">
+          <div id="myprogressBar"></div>
+        </div> -->
+      </div>
+      <div class="skill-card">
+        <p class="align-center">Reactjs</p>
+        <!-- <div id="Progress_Status">
+          <div id="myprogressBar"></div>
+        </div> -->
+      </div>
+      <div class="skill-card">
+        <p class="align-center">Nextjs</p>
+        <!-- <div id="Progress_Status">
+          <div id="myprogressBar"></div>
+        </div> -->
+      </div>
+      <div class="skill-card">
+        <p class="align-center">Tailwind</p>
+        <!-- <div id="Progress_Status">
+          <div id="myprogressBar"></div>
+        </div> -->
+      </div>
+      <div class="skill-card">
+        <p class="align-center">Bootstrap</p>
+        <!-- <div id="Progress_Status">
+          <div id="myprogressBar"></div>
+        </div> -->
+      </div>
   </div>
-  <div class="flex-row-center bolder">
+
+  <div class="projects">
+    <div class="slideshow-container">
+      <h2 class="sub-heading flex-row-center align-center">My projects</h2>
+      <div class="mySlides fade">
+        <div class="projectcardcontainer">
+          <div class="projectcard">
+            <img class="cardimg" src="Img\Utilitybox.png" alt="Utilitybox">
+            <h3 class="align-center margin10">Utility Box</h3>
+            <p class="align-center margin10">utility box is a multi-purpose web app. It has many useful features like
+              notepad, calculator, and todos.</p>
+          </div>
+          <div class="projectcard">
+            <img class="cardimg" src="Img\Quiztime.png" alt="QuizTime">
+            <h3 class="align-center margin10">QuizTime</h3>
+            <p class="align-center margin10">quiz time is a web app to test your JavaScript knowledge, there are
+              multiple
+              inbound
+              features including saving past results, improvement calculator, etc.</p>
+          </div>
+          <div class="projectcard">
+            <img class="cardimg" src="Img\Streamflowz.png" alt="Streamflowz">
+            <h3 class="align-center margin10">Streamflowz</h3>
+            <p class="align-center margin10">It is a media streaming site which a well-designed UI.</p>
+          </div>
+        </div>
+      </div>
+      <div class="mySlides fade">
+        <div class="projectcardcontainer">
+          <div class="projectcard">
+            <img class="cardimg" src="Img\Netdictionary.png" alt="Net dictionary">
+            <h3 class="align-center margin10">Net dictionary</h3>
+            <p class="align-center margin10">It is a Dictionary app that uses free Dictionary api</p>
+          </div>
+          <div class="projectcard">
+            <img class="cardimg" src="Img\Clockbox.png" alt="Clockbox">
+            <h3 class="align-center margin10">Clockbox</h3>
+            <p class="align-center margin10">clock box is a alarm clock app</p>
+          </div>
+          <div class="projectcard">
+            <img class="cardimg" src="Img\Funphoto.png" alt="Funphoto">
+            <h3 class="align-center margin10">Funphoto</h3>
+            <p class="align-center margin10">Funphoto is a free Unsplash image site. It has a search option to search in
+              various categories.</p>
+          </div>
+        </div>
+      </div>
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+    </div>
+  </div>
+
+  <h2 class="align-center sub-heading">Contact</h2>
+  <div class="contact">
+    <h2 class="align-center margin10">feel free to contact me</h2>
+    <p class="align-center margin10">tkk.tarunkushwaha05@gmail.com</p>
+    <p class="align-center margin10">mobile - 7400744121</p>
+  </div>
+
+  <div class="align-center bolder">
     &copy; 2023 Tarun
   </div>
 </body>

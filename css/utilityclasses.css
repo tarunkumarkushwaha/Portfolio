@@ -1,5 +1,44 @@
-.nobg-img {
-  background-image: none;
+/* css testing file  */
+
+.skills{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 20px;
+  padding-inline: 20px;
+}
+
+.skillnameshead{
+  background-color: #536886;
+  margin-inline: auto;
+  width: 200px;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+.skill-card{
+  border: 2px solid rgb(133, 133, 146);
+  background-color: #ddd;
+  color: black;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 15px;
+  height: 115px;
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+}
+
+.aboutme{
+  margin: 80px;
+}
+
+
+
+.pageLayout, .centerContent {
+  min-height: auto;
 }
 
 .flex-row-center {
@@ -8,8 +47,6 @@
   align-items: center;
   /* justify-content: center; */
 }
-
-
 
 .flex-column-center {
   display: flex;
@@ -29,22 +66,8 @@
   margin: 10px;
 }
 
-a,
-.projects {
-  margin: 10px;
-  padding: 15px;
-  border-radius: 25px;
-  background-color: rgba(0, 0, 0, 0.274);
-  color: aliceblue;
-  text-decoration: none;
-}
-
 .mySlides {
   display: none
-}
-
-img {
-  vertical-align: middle;
 }
 
 /* Slideshow container */
@@ -93,45 +116,45 @@ img {
   text-align: center;
 }
 
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active,
-.dot:hover {
+.active{
   background-color: #717171;
 }
 
-/* Fading animation */
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
+/* custom scroll bar  */
+/* width */
+::-webkit-scrollbar {
+  width: 15px;
 }
 
-@keyframes fade {
-  from {
-    opacity: .4
-  }
-
-  to {
-    opacity: 1
-  }
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
 }
 
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(133, 167, 241);
+  border-radius: 10px;
+}
 
-  .prev,
-  .next,
-  .text {
-    font-size: 11px
-  }
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #536886;
+}
+
+/* progress  */
+
+#Progress_Status {
+  width: 50%;
+  background-color: #ddd;
+}
+  
+#myprogressBar {
+  width: 1%;
+  height: 35px;
+  background-color: #4CAF50;
+  text-align: center;
+  line-height: 32px;
+  color: black;
 }
