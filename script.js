@@ -42,7 +42,7 @@ function showSlides(n) {
 
 // auto slide scroll 
 
-setInterval(()=>{plusSlides(1)},3000)
+setInterval(()=>{plusSlides(1)},4000)
 
 // navbar active button 
 
