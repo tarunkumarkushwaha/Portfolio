@@ -8,6 +8,7 @@
 
 .skills{
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
@@ -123,20 +124,4 @@
 
 .active{
   background-color: #717171;
-}
-
-/* progress  */
-
-#Progress_Status {
-  width: 50%;
-  background-color: #ddd;
-}
-  
-#myprogressBar {
-  width: 1%;
-  height: 35px;
-  background-color: #4CAF50;
-  text-align: center;
-  line-height: 32px;
-  color: black;
 }

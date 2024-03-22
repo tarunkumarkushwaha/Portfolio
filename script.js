@@ -1,5 +1,5 @@
 const showproject = () => {
-  var elem = document.getElementsByClassName("slideshow-container")[0];
+  var elem = document.getElementsByClassName("projects")[0];
   elem.scrollIntoView()
 }
 
@@ -42,7 +42,7 @@ function showSlides(n) {
 
 // auto slide scroll 
 
-setInterval(()=>{plusSlides(1)},3000)
+setInterval(()=>{plusSlides(1)},4000)
 
 // navbar active button 
 

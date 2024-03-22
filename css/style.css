@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
 
 html {
@@ -12,10 +16,10 @@ html {
   box-sizing: border-box;
 }
 
-body {
+.intro {
   background-image: url("https://github.com/tarunkumarkushwaha/TradeG/raw/master/Img/programming-unsplash.jpg");
   background-repeat: no-repeat;
-  background-color: #13151c;
+  /* background-color: #13151c; */
 }
 
 /* MENU */
@@ -54,10 +58,6 @@ body {
 
 .introcontainer {
   background-color: #0f0f0fab;
-}
-
-.intro {
-  max-width: 1300px;
   margin-inline: auto;
   padding: 250px;
   text-align: center;
@@ -86,7 +86,6 @@ body {
   z-index: 1;
   padding-top: 90px;
   padding-bottom: 90px;
-  background-color: #13151c;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -132,14 +131,7 @@ a:active {
   transition: 0.6s ease;
 }
 
-/* .about{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-} */
-
 .project,.about {
-  background-color: #13151c;
   color: #ddd;
 }
 
@@ -157,7 +149,6 @@ a:active {
 }
 
 .contact {
-  background-color: #13151c;
   color: #ddd;
   height: 100vh;
   padding: 200px;
@@ -183,7 +174,7 @@ a:active {
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #dae9ff;
+  background: #1d375f;
 }
 
 @media only screen and (max-width: 600px) {
